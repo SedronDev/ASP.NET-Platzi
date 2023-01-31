@@ -1,9 +1,9 @@
-@model Escuela
+@model Escuela //Se esta usando ViewModel, que es fuertemente tipado
 @{
-    ViewData["Title"] = "Informacion Escuela";
-
+    ViewData["Title"] = "Informacion Escuela"; // Aca se usa ViewData que es dinamico y debilmente tipado
+    Layout = "Simple";
 }
-
+<p>@ViewBag.cosaDinamica</p> <!--Y aca se usa ViewBag que tambien es dinamico y debilmente tipado -->
 <h1>Escuela</h1>
 <h2>Nombre: @Model.Nombre</h2>
 <p><strong>Año fundación: @Model.AñoFundacion</strong></p>

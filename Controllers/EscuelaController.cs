@@ -10,6 +10,8 @@ public class EscuelaController: Controller
         escuela.AñoFundacion = 2005;
         escuela.EscuelaId = Guid.NewGuid().ToString();
         escuela.Nombre = "Platzi School";
+
+        ViewBag.cosaDinamica = "Una string";
         return View(escuela);
     }
 }

@@ -18675,6 +18675,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Shared/Simple.cshtml",
+      "TargetPath": "Views\\Shared\\Simple.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Escuela/Index.cshtml",
       "TargetPath": "Views\\Escuela\\Index.cshtml",
       "FileKind": "mvc"
