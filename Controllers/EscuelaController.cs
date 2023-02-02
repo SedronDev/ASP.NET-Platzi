@@ -7,9 +7,12 @@ public class EscuelaController: Controller
     public IActionResult Index()
     {
         Escuela escuela = new Escuela();
-        escuela.AñoFundacion = 2005;
-        escuela.EscuelaId = Guid.NewGuid().ToString();
+        escuela.AñoDeCreación = 2005;
         escuela.Nombre = "Platzi School";
+        escuela.TipoEscuela = TiposEscuela.Secundaria;
+        escuela.Ciudad = "Lima";
+        escuela.Pais = "Peru";
+        escuela.Dirección = "Psj Caracas 2518, Lince";
 
         ViewBag.cosaDinamica = "Una string";
         return View(escuela);

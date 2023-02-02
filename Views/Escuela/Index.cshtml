@@ -1,9 +1,15 @@
-@model Escuela //Se esta usando ViewModel, que es fuertemente tipado
+@model Escuela //Se esta usando ViewModel, que es fuertemente tipado, al asignar el tipo de moelo se tipa fuertemente, pero se puede no poner aun que no es recomendable
 @{
     ViewData["Title"] = "Informacion Escuela"; // Aca se usa ViewData que es dinamico y debilmente tipado
     Layout = "Simple";
 }
 <p>@ViewBag.cosaDinamica</p> <!--Y aca se usa ViewBag que tambien es dinamico y debilmente tipado -->
-<h1>Escuela</h1>
+<div class="d-flex align-items-end mb-2"><h1 class="m-0">Escuela</h1> <small>@Model.UniqueId</small></div>
 <h2>Nombre: @Model.Nombre</h2>
-<p><strong>Año fundación: @Model.AñoFundacion</strong></p>
+<h3>Tipo de escuela: @Model.TipoEscuela</h3>
+<address>
+    <p>Direccion: @Model.Dirección</p>
+    <p>Pais: @Model.Pais</p>
+    <p>Ciudad: @Model.Ciudad</p>
+</address>
+<p><strong>Año fundación: @Model.AñoDeCreación</strong></p>

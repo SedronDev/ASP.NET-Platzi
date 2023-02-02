@@ -18645,6 +18645,11 @@
   "RootNamespace": "ASP_Platzi",
   "Documents": [
     {
+      "FilePath": "/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Asignatura/Index.cshtml",
+      "TargetPath": "Views\\Asignatura\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -18662,6 +18667,11 @@
     {
       "FilePath": "/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Shared/AsignaturaSimple.cshtml",
+      "TargetPath": "Views\\Shared\\AsignaturaSimple.cshtml",
       "FileKind": "mvc"
     },
     {

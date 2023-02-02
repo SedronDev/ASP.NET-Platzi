@@ -25,7 +25,7 @@ namespace ASP_Platzi.Models
 
         public Escuela()
         {
-
+            UniqueId = Guid.NewGuid().ToString();
         }
         public override string ToString()
         {
