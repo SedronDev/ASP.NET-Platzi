@@ -6,7 +6,6 @@ namespace ASP_Platzi.Models
     {
         public Asignatura()
         {
-            UniqueId = Guid.NewGuid().ToString();
         }
     }
 }

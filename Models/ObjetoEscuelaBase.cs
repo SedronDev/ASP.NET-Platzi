@@ -9,7 +9,7 @@ namespace ASP_Platzi.Models
 
         public ObjetoEscuelaBase()
         {
-
+            UniqueId = Guid.NewGuid().ToString();
         }
 
         public override string ToString()

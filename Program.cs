@@ -1,7 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<EscuelaContext>(opt => opt.UseMySQL("server=67.225.161.252;database=limamenu_asp;user=limamenu_asp;password=Diego5147"));
 
 var app = builder.Build();
 

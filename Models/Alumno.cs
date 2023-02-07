@@ -3,6 +3,7 @@ namespace ASP_Platzi.Models
 {
     public class Alumno: ObjetoEscuelaBase
     {
-        public List<Evaluación> Evaluaciones { get; set; } = new List<Evaluación>();
+        public List<Curso> Cursos {get;set;} = new List<Curso>();
+        public ICollection<AlumnoEscuela>? AlumnoEscuelas {get;set;}
     }
 }

@@ -1,20 +1,23 @@
 using Microsoft.AspNetCore.Mvc;
 using ASP_Platzi.Models;
+using Microsoft.EntityFrameworkCore;
+
 namespace ASP_Platzi.Controllers;
 
 public class EscuelaController: Controller
 {
+    private EscuelaContext _context;
+
     public IActionResult Index()
     {
-        Escuela escuela = new Escuela();
-        escuela.AñoDeCreación = 2005;
-        escuela.Nombre = "Platzi School";
-        escuela.TipoEscuela = TiposEscuela.Secundaria;
-        escuela.Ciudad = "Lima";
-        escuela.Pais = "Peru";
-        escuela.Dirección = "Psj Caracas 2518, Lince";
+        var escuela = _context.Escuelas.FirstOrDefault();
 
         ViewBag.cosaDinamica = "Una string";
         return View(escuela);
+    }
+
+    public EscuelaController(EscuelaContext context)
+    {
+        _context = context;
     }
 }
