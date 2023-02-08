@@ -4,17 +4,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ASP_Platzi.Controllers;
 
-public class EscuelaController: Controller
+public class AlumnoController: Controller
 {
-    EscuelaContext dbContext;
+    IAlumnoService alumnoService;
 
-    public EscuelaController(EscuelaContext db)
+    public AlumnoController(IAlumnoService service)
     {
-        dbContext = db;
+        alumnoService = service;
     }
 
     public IActionResult Index()
     {
+
         return View();
         /*var escuela = dbContext.Escuelas?.FirstOrDefault();
 

@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/sedron/Documentos/Cursos/ASP-Platzi
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Alumno/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bW5vL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Asignatura/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXNpZ25hdHVyYS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
