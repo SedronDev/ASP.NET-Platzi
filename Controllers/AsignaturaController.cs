@@ -4,18 +4,19 @@ namespace ASP_Platzi.Controllers;
 
 public class AsignaturaController: Controller
 {
+    IAsignaturaService asignaturaService;
+
+    public AsignaturaController(IAsignaturaService service)
+    {
+        asignaturaService = service;
+    }
     public IActionResult Index()
     {
-        Asignatura asignatura = new Asignatura{
-            Nombre = "Programacion"
-        };
-        Asignatura asignatura2 = new Asignatura{
-            Nombre = "Matematicas"
-        };
-        Asignatura asignatura3 = new Asignatura{
-            Nombre = "Pump"
-        };
-        List<Asignatura> asignaturas = new List<Asignatura>() {asignatura, asignatura2, asignatura3};
+        var asignaturas = asignaturaService.Get().ToList();
         return View(asignaturas);
+    }
+    public IActionResult Create()
+    {
+        return View();
     }
 }

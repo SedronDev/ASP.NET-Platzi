@@ -6,19 +6,29 @@ namespace ASP_Platzi.Controllers;
 
 public class EscuelaController: Controller
 {
-    EscuelaContext dbContext;
+    IEscuelaService escuelaService;
 
-    public EscuelaController(EscuelaContext db)
+    public EscuelaController(IEscuelaService service)
     {
-        dbContext = db;
+        escuelaService = service;
     }
 
     public IActionResult Index()
     {
-        return View();
-        /*var escuela = dbContext.Escuelas?.FirstOrDefault();
+        List<Escuela> Escuelas = escuelaService.Get().ToList();
+        return View(Escuelas);
+    }
 
-        ViewBag.cosaDinamica = "Una string";
-        return View(escuela);*/
+    public IActionResult Create()
+    {
+        var conNombre = new Escuela(){
+            Nombre = "SedEscuela",
+            AñoDeCreación = 1996,
+            Pais = "Perú",
+            Dirección = "Avenida Garzón 1895",
+            TipoEscuela = TiposEscuela.Secundaria
+        };
+        escuelaService.Update("ddfc11e3-bf48-456a-9960-e30f613023ce", conNombre);
+        return View();
     }
 }

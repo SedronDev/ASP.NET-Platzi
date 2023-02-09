@@ -20,8 +20,20 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bW5vL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Asignatura/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXNpZ25hdHVyYS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Asignatura/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXNpZ25hdHVyYS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Curso/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3Vyc28vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Escuela/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXNjdWVsYS9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Escuela/Index.cshtml]
@@ -32,8 +44,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Shared/AlumnoAccordion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0FsdW1ub0FjY29yZGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Shared/AsignaturaAccordion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0FzaWduYXR1cmFBY2NvcmRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Shared/AsignaturaSimple.cshtml]
@@ -42,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Shared/EscuelaAccordion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0VzY3VlbGFBY2NvcmRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/sedron/Documentos/Cursos/ASP-Platzi/Views/Shared/ObjetoEscuelaSimple.cshtml]
