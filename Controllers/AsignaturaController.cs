@@ -19,4 +19,12 @@ public class AsignaturaController: Controller
     {
         return View();
     }
+
+    [HttpPost]
+    public IActionResult Create(Asignatura asignatura)
+    {
+        asignaturaService.Save(asignatura);
+
+        return View();
+    }
 }

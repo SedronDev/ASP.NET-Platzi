@@ -7,6 +7,7 @@
 @foreach (Asignatura asignatura in Model)
 {
     <partial name="ObjetoEscuelaSimple" model="asignatura"/>
+    <hr />
 }
 
 <a class="nav-link text-dark" asp-area="" asp-controller="Asignatura" asp-action="Create">Crear una asignatura</a>

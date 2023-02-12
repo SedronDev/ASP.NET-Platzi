@@ -1,7 +1,15 @@
-
+@model Asignatura
 @{
     ViewData["Title"] = "Crear Asignaturas";
     Layout = "Simple";
 }
 
-<h1>Hola desde la creacion</h1>
+<form method="post">
+    <label asp-for="Nombre">
+        <h3 class="text-center">Ingrese el nombre de la asignatura a crear:</h3>
+    </label>
+    <input type="text" class="form-control text-center" asp-for="Nombre"/>
+    <button type="submit" class="btn btn-primary d-flex mx-auto mt-3">Crear</button>
+</form>
+
+
