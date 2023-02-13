@@ -1,13 +1,12 @@
 @model List<Asignatura>
 @{
     ViewData["Title"] = "Informacion Asignatura";
-    Layout = "Simple";
 }
 
 @foreach (Asignatura asignatura in Model)
 {
-    <partial name="ObjetoEscuelaSimple" model="asignatura"/>
+    <partial name="AsignaturaSimple" model="asignatura"/>
     <hr />
 }
 
-<a class="nav-link text-dark" asp-area="" asp-controller="Asignatura" asp-action="Create">Crear una asignatura</a>
+    <a class="btn btn-primary" asp-area="" asp-controller="Asignatura" asp-action="Create">Crear una asignatura</a>

@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@{ 
+    string path = Context.Request.Path;
+    Console.WriteLine(path);
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -12,18 +17,29 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Escuela" asp-action="Index">ASP_Platzi</a>
+                <a class="btn btn-outline-dark fs-3" asp-area="" asp-controller="Home" asp-action="Index">
+                    ASP_Platzi
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav flex-grow-1  justify-content-start">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark @(path.StartsWith("/Home") ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark @(path.StartsWith("/Escuela") ? "active" : "")" asp-area="" asp-controller="Escuela" asp-action="Index">Escuelas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @(path.StartsWith("/Alumno") ? "active" : "")" asp-area="" asp-controller="Alumno" asp-action="Index">Alumnos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @(path.StartsWith("/Curso") ? "active" : "")" asp-area="" asp-controller="Curso" asp-action="Index">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @(path.StartsWith("/Asignatura") ? "active" : "")" asp-area="" asp-controller="Asignatura" asp-action="Index">Asignaturas</a>
                         </li>
                     </ul>
                 </div>
@@ -38,7 +54,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - ASP_Platzi - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2023 - ASP_Platzi - SedronDev</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

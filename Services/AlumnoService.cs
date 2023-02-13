@@ -25,7 +25,6 @@ public class AlumnoService: IAlumnoService
         if (currentAlumno != null)
         {
             currentAlumno.Nombre = alumno.Nombre;
-            currentAlumno.Cursos = alumno.Cursos;
             currentAlumno.AlumnoEscuelas = alumno.AlumnoEscuelas;
 
             await dbContext.SaveChangesAsync();

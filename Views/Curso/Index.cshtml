@@ -1,10 +1,9 @@
-@model List<Escuela>
+@model List<Curso>
 @{
     ViewData["Title"] = "Informacion Escuelas";
-    Layout = "Simple";
 }
 
-@foreach (Escuela Escuela in Model)
+@foreach (Curso Curso in Model)
 {
-    <partial name="EscuelaAccordion" model="Escuela"/>
+    <partial name="CursoSimple" model="Curso"/>
 }

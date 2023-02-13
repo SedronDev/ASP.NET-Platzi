@@ -1,6 +1,7 @@
 @model Asignatura
 
-<div class="d-flex align-items-end mb-2">
-    <h1 class="m-0">Asignatura</h1> <small>@Model.UniqueId</small>
+<div class="d-flex flex-column">
+    <h1 class="mb-1">Asignatura</h1>
+    <small>ID: @Model.UniqueId</small>
+    <h2 class="m-0">Nombre: @Model.Nombre</h2>
 </div>
-<h2>Nombre: @Model.Nombre</h2>

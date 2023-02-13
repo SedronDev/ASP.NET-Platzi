@@ -4,23 +4,24 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ASP_Platzi.Controllers;
 
-public class AlumnoController: Controller
+public class CursoController: Controller
 {
-    IAlumnoService alumnoService;
+    ICursoService cursoService;
 
-    public AlumnoController(IAlumnoService service)
+    public CursoController(ICursoService service)
     {
-        alumnoService = service;
+        cursoService = service;
     }
 
     public IActionResult Index()
     {
-        List<Alumno> Alumnos = alumnoService.Get().ToList();
-        return View(Alumnos);
+        List<Curso> Cursos = cursoService.Get().ToList();
+        return View(Cursos);
     }
 
     public IActionResult Create()
     {
+
         return View();
     }
 }
